@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "eslint-plugin-compat": "^4.2.0"
+  }
+}
