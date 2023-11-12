@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimatix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/container-info.css">
 </head>
 
 <body>
@@ -22,9 +31,16 @@
                     <p class="info__text">Задача организации, в особенности же курс на социально-ориентированный
                         национальный
                         проект позволяет оценить значение модели развития.</p>
-                    <button type="button" class="info__button">Подробнее о нас</button>
-                    <button type="button" class="info__button__img"><img src="./assets/image/play.svg"
-                            alt="play"></button>
+                    <div class="info__button-conteiner">
+                        <button type="button" class="info__button">Подробнее о нас</button>
+                        <button type="button" class="info__button__img"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M10 8L16 12L10 16V8Z" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg></button>
+                    </div>
                 </section>
                 <img class="info__img" src="./assets/image/luna.png" alt="luna">
             </section>

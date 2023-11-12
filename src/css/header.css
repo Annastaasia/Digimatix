@@ -1,1 +1,36 @@
-/*# sourceMappingURL=header.css.map */
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 352px;
+}
+
+.header__button {
+  max-width: 185px;
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+  background: #ffffff;
+  color: #5101A6;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__button:hover {
+  background: #5101A6;
+  color: #ffffff;
+}
+
+.header__button:hover {
+  background: #5101A6;
+  color: #ffffff;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,85 @@
+.background {
+  background-image: url("../../assets/image/background-header.jpg");
+  overflow: hidden;
+  background-position: top center;
+  background-repeat: repeat-x;
+  box-sizing: border-box;
+}
+
+.container-info {
+  display: grid;
+  justify-items: start;
+  grid-template-areas: "info info__img";
+  grid-template-columns: 1fr 0.9fr;
+  box-sizing: border-box;
+  padding: 0 352px;
+}
+.container-info .info {
+  grid-area: info;
+}
+.container-info .info .info__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+.container-info .info .info__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+.container-info .info .info__button-conteiner .info__button {
+  max-width: 160px;
+  height: 48px;
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+  background: #ffffff;
+  color: #5101A6;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.container-info .info .info__button-conteiner .info__button:hover {
+  background: #5101A6;
+  color: #ffffff;
+}
+.container-info .info .info__button-conteiner .info__button:hover {
+  background: #5101A6;
+  color: #ffffff;
+}
+.container-info .info .info__button-conteiner .info__button__img {
+  max-width: 48px;
+  max-height: 48px;
+  padding: 12px;
+  background: #5101A6;
+  cursor: pointer;
+  border-radius: 68px;
+  border: 1px solid #5101A6;
+  outline: none;
+}
+.container-info .info .info__button-conteiner .info__button__img:hover {
+  background: #ffffff;
+}
+.container-info .info .info__button-conteiner .info__button__img:hover svg {
+  fill: #5101A6;
+}
+.container-info .info .info__button-conteiner .info__button__img:hover {
+  background: #ffffff;
+}
+.container-info .info .info__button-conteiner .info__button__img:hover svg {
+  fill: #5101A6;
+}/*# sourceMappingURL=container-info.css.map */

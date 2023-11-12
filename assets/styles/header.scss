@@ -1,9 +1,38 @@
-// header {
-//   background-image: url("../../assets/image/background-header.jpg");
-//   overflow: hidden;
-//   background-size: cover;
-//   background-position: top center;
-//   background-repeat: no-repeat;
-//   box-sizing: border-box;
-//   font-family: "Poppins", "Montserrat", sans-serif;
-// }
+@import "./_vars.scss";
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 352px;
+}
+
+.header__button {
+  max-width: 185px;
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+  background: $color-one;
+  color: $color-second;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid $color-one;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__button:hover {
+  background: $color-second;
+  color: $color-one;
+}
+
+.header__button:hover {
+  background: $color-second;
+  color: $color-one;
+}
