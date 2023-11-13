@@ -4,32 +4,50 @@
   padding: 0 352px;
 
   .ui-widget.ui-widget-content {
-    border: 0px solid #ffffff;
+    border: none;
+    margin-top: 76px;
   }
 
+  .slider__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slider__tabs {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  // .slider__buttons {
+
+  // }
+
   .slider__tab {
-    background-color: #ffffff;
-    border: 0px solid #ffffff;
+    background-color: $color-one;
+    border: none;
   }
 
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-    float: left;
     padding: 0.5em 0;
     text-decoration: none;
   }
 
+  .ui-helper-clearfix:before,
+  .ui-helper-clearfix:after {
+    content: none;
+  }
+
   .ui-widget-header {
-    background: #ffffff;
-    border: 0px solid #ffffff;
-    color: #333333;
-    font-weight: bold;
+    background: $color-one;
+    border: none;
 
     .ui-state-active,
     .ui-state-active a,
     .ui-state-active a:link,
     .ui-state-active a:visited {
       color: $color-second;
-      border: 0px solid #ffffff;
+      border: none;
       border-bottom: 2px solid $color-second;
       font-size: 16px;
       font-weight: 700;
@@ -39,14 +57,30 @@
       font-family: "Roboto", sans-serif;
     }
 
-    .ui-state-active,
-    .ui-widget-content .ui-state-active,
-    .ui-widget-header .ui-state-active,
-    a.ui-button:active,
-    .ui-button:active,
-    .ui-button.ui-state-active:hover {
-      border: 0px solid #ffffff;
-      background: #f9f9f9;
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+      border: none;
+      background: $color-one;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: $font-color;
+      font-family: "Roboto", sans-serif;
+    }
+
+    a:hover {
+      color: $color-second;
+      cursor: pointer;
+    }
+    a:focus {
+      color: $color-second;
+      cursor: pointer;
     }
   }
 }

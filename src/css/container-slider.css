@@ -2,29 +2,41 @@
   padding: 0 352px;
 }
 .container-slider .ui-widget.ui-widget-content {
-  border: 0px solid #ffffff;
+  border: none;
+  margin-top: 76px;
+}
+.container-slider .slider__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-slider .slider__tabs {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .container-slider .slider__tab {
   background-color: #ffffff;
-  border: 0px solid #ffffff;
+  border: none;
 }
 .container-slider .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-  float: left;
   padding: 0.5em 0;
   text-decoration: none;
 }
+.container-slider .ui-helper-clearfix:before,
+.container-slider .ui-helper-clearfix:after {
+  content: none;
+}
 .container-slider .ui-widget-header {
   background: #ffffff;
-  border: 0px solid #ffffff;
-  color: #333333;
-  font-weight: bold;
+  border: none;
 }
 .container-slider .ui-widget-header .ui-state-active,
 .container-slider .ui-widget-header .ui-state-active a,
 .container-slider .ui-widget-header .ui-state-active a:link,
 .container-slider .ui-widget-header .ui-state-active a:visited {
   color: #5101a6;
-  border: 0px solid #ffffff;
+  border: none;
   border-bottom: 2px solid #5101a6;
   font-size: 16px;
   font-weight: 700;
@@ -33,14 +45,29 @@
   text-align: left;
   font-family: "Roboto", sans-serif;
 }
-.container-slider .ui-widget-header .ui-state-active,
-.container-slider .ui-widget-header .ui-widget-content .ui-state-active,
-.container-slider .ui-widget-header .ui-widget-header .ui-state-active,
-.container-slider .ui-widget-header a.ui-button:active,
-.container-slider .ui-widget-header .ui-button:active,
-.container-slider .ui-widget-header .ui-button.ui-state-active:hover {
-  border: 0px solid #ffffff;
-  background: #f9f9f9;
+.container-slider .ui-widget-header .ui-state-default,
+.container-slider .ui-widget-header .ui-widget-content .ui-state-default,
+.container-slider .ui-widget-header .ui-widget-header .ui-state-default,
+.container-slider .ui-widget-header .ui-button,
+.container-slider .ui-widget-header html .ui-button.ui-state-disabled:hover,
+.container-slider .ui-widget-header html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #200142;
+  font-family: "Roboto", sans-serif;
+}
+.container-slider .ui-widget-header a:hover {
+  color: #5101a6;
+  cursor: pointer;
+}
+.container-slider .ui-widget-header a:focus {
+  color: #5101a6;
+  cursor: pointer;
 }
 
 .slider__title {
