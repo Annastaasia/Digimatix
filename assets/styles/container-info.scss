@@ -71,9 +71,10 @@
         color: $color-one;
       }
 
-      .info__button:hover {
+      .info__button:focus {
         background: $color-second;
         color: $color-one;
+        border: 1px solid $color-one;
       }
 
       .info__button__img {
@@ -95,8 +96,9 @@
         }
       }
 
-      .info__button__img:hover {
+      .info__button__img:focus {
         background: $color-one;
+        border: 1px solid $color-second;
 
         svg {
           fill: $color-second;

@@ -16,7 +16,7 @@ header {
   letter-spacing: 1px;
   text-align: left;
   background: #ffffff;
-  color: #5101A6;
+  color: #5101a6;
   cursor: pointer;
   border-radius: 6px;
   border: 1px solid #ffffff;
@@ -26,11 +26,12 @@ header {
 }
 
 .header__button:hover {
-  background: #5101A6;
+  background: #5101a6;
   color: #ffffff;
 }
 
-.header__button:hover {
-  background: #5101A6;
+.header__button:focus {
+  background: #5101a6;
   color: #ffffff;
+  border: 1px solid #ffffff;
 }/*# sourceMappingURL=header.css.map */

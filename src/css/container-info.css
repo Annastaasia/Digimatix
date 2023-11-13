@@ -54,7 +54,7 @@
   letter-spacing: 1px;
   text-align: left;
   background: #ffffff;
-  color: #5101A6;
+  color: #5101a6;
   cursor: pointer;
   border-radius: 6px;
   border: 1px solid #ffffff;
@@ -63,34 +63,36 @@
   font-family: "Roboto", sans-serif;
 }
 .container-info .info .info__button-conteiner .info__button:hover {
-  background: #5101A6;
+  background: #5101a6;
   color: #ffffff;
 }
-.container-info .info .info__button-conteiner .info__button:hover {
-  background: #5101A6;
+.container-info .info .info__button-conteiner .info__button:focus {
+  background: #5101a6;
   color: #ffffff;
+  border: 1px solid #ffffff;
 }
 .container-info .info .info__button-conteiner .info__button__img {
   max-width: 48px;
   max-height: 48px;
   padding: 12px;
-  background: #5101A6;
+  background: #5101a6;
   cursor: pointer;
   border-radius: 68px;
-  border: 1px solid #5101A6;
+  border: 1px solid #5101a6;
   outline: none;
 }
 .container-info .info .info__button-conteiner .info__button__img:hover {
   background: #ffffff;
 }
 .container-info .info .info__button-conteiner .info__button__img:hover svg {
-  fill: #5101A6;
+  fill: #5101a6;
 }
-.container-info .info .info__button-conteiner .info__button__img:hover {
+.container-info .info .info__button-conteiner .info__button__img:focus {
   background: #ffffff;
+  border: 1px solid #5101a6;
 }
-.container-info .info .info__button-conteiner .info__button__img:hover svg {
-  fill: #5101A6;
+.container-info .info .info__button-conteiner .info__button__img:focus svg {
+  fill: #5101a6;
 }
 .container-info .info__img {
   grid-area: info__img;

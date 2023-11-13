@@ -1,0 +1,62 @@
+@import "./_vars.scss";
+
+.container-slider {
+  padding: 0 352px;
+
+  .ui-widget.ui-widget-content {
+    border: 0px solid #ffffff;
+  }
+
+  .slider__tab {
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+  }
+
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: left;
+    padding: 0.5em 0;
+    text-decoration: none;
+  }
+
+  .ui-widget-header {
+    background: #ffffff;
+    border: 0px solid #ffffff;
+    color: #333333;
+    font-weight: bold;
+
+    .ui-state-active,
+    .ui-state-active a,
+    .ui-state-active a:link,
+    .ui-state-active a:visited {
+      color: $color-second;
+      border: 0px solid #ffffff;
+      border-bottom: 2px solid $color-second;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active,
+    .ui-button:active,
+    .ui-button.ui-state-active:hover {
+      border: 0px solid #ffffff;
+      background: #f9f9f9;
+    }
+  }
+}
+
+.slider__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $font-color;
+  font-family: "Montserrat", sans-serif;
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/container-info.css">
+    <link rel="stylesheet" href="./src/css/container-slider.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -53,11 +54,14 @@
         <section class="container-slider">
             <h3 class="slider__title">Вы с нами?</h3>
             <div id="tabs">
-                <ul>
-                    <li><a href="#tab1">Горящие предложения</a></li>
-                    <li><a href="#tab2">Все предложения</a></li>
-                    <button type="button" id="prev">Предыдущий</button>
-                    <button type="button" id="next">Следующий</button>
+                <ul class="slider__header">
+
+                    <li><a href="#tab1" class="slider__tab">Горящие предложения</a></li>
+                    <li><a href="#tab2" class="slider__tab">Все предложения</a></li>
+
+                    <button type="button" id="prev" class="slider__prev">Предыдущий</button>
+                    <button type="button" id="next" class="slider__next">Следующий</button>
+
                 </ul>
                 <div id="tab1">
                     <div class="slider">
@@ -112,7 +116,6 @@
                             <p>Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
                         </div>
                     </div>
-
                 </div>
                 <div id="tab2">
                     <div class="slider">
@@ -122,7 +125,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
