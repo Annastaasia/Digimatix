@@ -1,8 +1,6 @@
 @import "./_vars.scss";
 
 .container-slider {
-  padding: 0 352px;
-
   .ui-widget.ui-widget-content {
     border: none;
     margin-top: 76px;
@@ -12,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 352px;
   }
 
   .slider__tabs {
@@ -19,13 +18,32 @@
     column-gap: 2rem;
   }
 
-  // .slider__buttons {
-
-  // }
-
   .slider__tab {
     background-color: $color-one;
     border: none;
+  }
+
+  .slider__buttons {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  .slider__button {
+    width: 48px;
+    height: 48px;
+    padding-top: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    background: #f6f6fa;
+  }
+
+  .slider__button:hover {
+    background: #e1c3f2;
+  }
+
+  .slider__button:focus {
+    border: 2px solid $color-second;
   }
 
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
@@ -82,6 +100,69 @@
       color: $color-second;
       cursor: pointer;
     }
+  }
+
+  .ui-tabs .ui-tabs-panel {
+    border-width: 0;
+    padding: 3em 322px;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: $color-second;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .slider__text {
+    max-width: 250px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $font-color;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $color-second;
+  }
+
+  .slick-dots li {
+    width: 10px;
+  }
+
+  .slick-dots li button {
+    font-size: 8px;
+    width: 8px;
+  }
+
+  .slick-dots li button::before {
+    font-size: 8px;
+    width: 8px;
   }
 }
 
