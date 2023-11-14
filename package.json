@@ -2,5 +2,13 @@
   "dependencies": {
     "eslint-plugin-compat": "^4.2.0",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "browserslist": [
+    "IE 10",
+    "EDGE",
+    "CHROME",
+    "FIREFOX",
+    "last 2 versions",
+    "not dead"
+  ]
 }

@@ -1,17 +1,67 @@
+@media screen and (min-width: 1500px) {
+  .container-form {
+    padding: 0 352px;
+    height: 460px;
+  }
+  .form__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1499px) {
+  .container-form {
+    padding: 0 202px;
+    height: 460px;
+  }
+  .form__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container-form {
+    padding: 0 152px;
+    height: 460px;
+  }
+  .form__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1059px) {
+  .container-form {
+    padding: 0 102px;
+    height: 660px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-form {
+    padding: 0 52px;
+    height: 770px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__title {
+    font-size: 24px;
+  }
+}
 .container-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 352px;
-  height: 460px;
   background-image: url("../../assets/image/background-form.png");
   overflow: hidden;
   background-position: top center;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   box-sizing: border-box;
 }
 .container-form .form__title {
-  font-size: 32px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0px;
@@ -38,14 +88,10 @@
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
-.form .form-group {
-  width: 100%;
-  padding: 0 10px;
-  margin-bottom: 17px;
-  position: relative;
+.form .form__group {
+  width: 256px;
 }
 .form .form__fieldset {
-  width: 256px;
   border: 1px solid #bb6bd9;
   border-radius: 8px;
   padding: 0 8px;
@@ -151,4 +197,13 @@
   font-weight: 700;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
+}
+.form .form__button:hover {
+  background: #ffffff;
+  color: #5101a6;
+}
+.form .form__button:focus {
+  background: #5101a6;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }/*# sourceMappingURL=container-form.css.map */

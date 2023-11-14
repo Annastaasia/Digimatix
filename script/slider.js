@@ -13,5 +13,30 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesToScroll: 4,
         prevArrow: $('#prev'),
         nextArrow: $('#next'),
+        responsive: [
+            {
+                breakpoint: 1744,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1180,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 815,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });
