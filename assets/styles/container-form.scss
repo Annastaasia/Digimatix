@@ -1,0 +1,152 @@
+@import "./_vars.scss";
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 352px;
+  height: 460px;
+  background-image: url("../../assets/image/background-form.png");
+  overflow: hidden;
+  background-position: top center;
+  background-repeat: repeat-x;
+  box-sizing: border-box;
+
+  .form__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 72px 0 32px 0;
+    color: $color-one;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .form__text {
+    max-width: 556px;
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $color-one;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  column-gap: 3rem;
+
+  .form-group {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 17px;
+    position: relative;
+  }
+
+  .form__fieldset {
+    width: 256px;
+    border: 1px solid $font-color-second;
+    border-radius: 8px;
+    padding: 0 8px;
+  }
+  .form__legend {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 0 20px 0 24px;
+    color: $color-one;
+    font-family: "Roboto", sans-serif;
+  }
+  .form__input {
+    width: 100%;
+    padding: 14px 0 24px 24px;
+    border: none;
+    appearance: unset;
+    outline: none;
+    box-sizing: border-box;
+    background: none;
+    background-color: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    color: $font-color-second;
+  }
+
+  ::placeholder {
+    color: $font-color-second;
+    opacity: 1;
+  }
+  ::-ms-input-placeholder {
+    color: $font-color-second;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $font-color-second;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  .form__aria {
+    width: 256px;
+    height: 75px;
+    margin-top: 1.5vh;
+    border: 1px solid $color-one;
+    border-radius: 8px;
+  }
+
+  .form__email {
+    width: 100%;
+    padding: 28px 0 24px 24px;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    appearance: unset;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    color: $color-one;
+  }
+
+  .form__email::placeholder {
+    color: $color-one;
+    opacity: 1;
+  }
+  .form__email::-ms-input-placeholder {
+    color: $color-one;
+  }
+
+  .form__button {
+    width: 256px;
+    height: 72px;
+    margin-top: 1.5vh;
+    padding: 24px, 16px;
+    border-radius: 6px;
+    background: $color-second;
+    color: $color-one;
+    cursor: pointer;
+    border: 1px solid $color-second;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+  }
+}
